@@ -13,8 +13,11 @@ Se desarrolló en **Python 3.10 o superior** y utiliza únicamente la biblioteca
 
 Comprueba la versión instalada con:
 
+macOS:
 ```bash
-python --version
+python3.13 --version
+python3 --version
+py --version
 ```
 
 ## 3. Estructura del proyecto
@@ -44,8 +47,11 @@ proyecto_solid_pedidos/
 2. Abre una terminal dentro de la carpeta `proyecto_solid_pedidos`.
 3. Ejecuta:
 
+macOS:
 ```bash
-python -m pedidos.main
+python3.13 -m pedidos.main
+python3 -m pedidos.main
+py -3 -m pedidos.main
 ```
 
 El programa crea un pedido urgente de ejemplo, lo guarda en el archivo `pedidos.db` y muestra las notificaciones en la consola. La notificación simula el aviso al usuario; no envía correos electrónicos reales.
@@ -99,8 +105,11 @@ SQLite almacena los pedidos en la tabla `pedidos` y sus productos en `productos_
 
 Desde la carpeta raíz del proyecto, ejecuta:
 
+macOS:
 ```bash
-python -m unittest discover -s tests -v
+python3.13 -m unittest discover -s tests -v
+python3 -m unittest discover -s tests -v
+py -3 -m unittest discover -s tests -v
 ```
 
 Las pruebas verifican la creación de pedidos normales y urgentes, el registro de un nuevo tipo, el comportamiento de las suscripciones, el flujo del servicio y la identidad compartida de la conexión Singleton.
